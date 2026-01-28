@@ -3,9 +3,11 @@ import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ProblemSolution } from './components/ProblemSolution';
+import { TargetSegments } from './components/TargetSegments';
 import { ProductTiers } from './components/ProductTiers';
-import { FundingSection } from './components/FundingSection';
 import { BusinessModel } from './components/BusinessModel';
+import { StrategySection } from './components/StrategySection';
+import { FundingSection } from './components/FundingSection';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -21,12 +23,20 @@ function App() {
           <ProblemSolution />
         </section>
 
+        <section id="segments">
+          <TargetSegments />
+        </section>
+
         <section id="products">
           <ProductTiers />
         </section>
 
         <section id="business">
           <BusinessModel />
+        </section>
+
+        <section id="strategy">
+          <StrategySection />
         </section>
 
         <section id="funding">

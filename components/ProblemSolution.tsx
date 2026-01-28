@@ -43,7 +43,7 @@ export const ProblemSolution: React.FC = () => {
               <p className="text-slate-300 mb-8 leading-relaxed">
                 Tận dụng kiến trúc Unified Memory trên chip Apple M-series, chúng tôi mang sức mạnh của các mô hình LLM hàng đầu (Llama 3, DeepSeek) về ngay tại văn phòng bạn.
               </p>
-              <ul className="space-y-4 text-slate-400">
+              <ul className="space-y-4 text-slate-400 mb-8">
                 <li className="flex items-center space-x-3">
                   <span className="w-5 h-5 bg-emerald-500/20 text-emerald-500 rounded-full flex items-center justify-center text-xs">✓</span>
                   <span>Bảo mật 100%, không cần Internet</span>
@@ -57,6 +57,10 @@ export const ProblemSolution: React.FC = () => {
                   <span>Chi phí đầu tư một lần, sử dụng vĩnh viễn</span>
                 </li>
               </ul>
+              <div className="p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl">
+                 <p className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-1">Cam kết vàng</p>
+                 <p className="text-slate-300 text-sm italic">"Dữ liệu của bạn ở lại với bạn. Mãi mãi."</p>
+              </div>
             </div>
             <div className="relative">
               <img src="https://umxxfeuo5ed9xpid.public.blob.vercel-storage.com/media/gemini_generated_image_3mlypz3mlypz3mly_1769612846736.png" className="rounded-2xl shadow-2xl" alt="Apple Silicon Tech" />
