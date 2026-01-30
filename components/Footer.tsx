@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">A</span>
               </div>
-              <span className="text-lg font-bold text-white">AI-Local Hub</span>
+              <span className="text-lg font-bold text-white">Auto By Taste</span>
             </div>
             <p className="text-slate-400 max-w-sm leading-relaxed mb-6">
               Tiên phong mang trí tuệ nhân tạo cục bộ đến với mọi doanh nghiệp Việt Nam, đảm bảo an toàn dữ liệu và tối ưu hóa hiệu suất làm việc.
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
-          <p>© 2026 AI-Local Hub Project. All rights reserved.</p>
+          <p>© 2026 Auto By Taste. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-slate-400 transition-colors">Điều khoản dịch vụ</a>
             <a href="#" className="hover:text-slate-400 transition-colors">Chính sách bảo mật</a>
