@@ -5,6 +5,7 @@ import { Hero } from './components/Hero';
 import { ProblemSolution } from './components/ProblemSolution';
 import { TargetSegments } from './components/TargetSegments';
 import { ModelHardwareGraph } from './components/ModelHardwareGraph';
+import { AIArchitectureGraph } from './components/AIArchitectureGraph';
 import { ProductTiers } from './components/ProductTiers';
 import { BusinessModel } from './components/BusinessModel';
 import { StrategySection } from './components/StrategySection';
@@ -26,6 +27,10 @@ function App() {
 
         <section id="segments">
           <TargetSegments />
+        </section>
+
+        <section id="architecture">
+          <AIArchitectureGraph />
         </section>
 
         <section id="models">

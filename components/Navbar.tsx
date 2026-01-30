@@ -19,12 +19,13 @@ export const Navbar: React.FC = () => {
           <div className="w-10 h-10 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
             <span className="text-white font-bold text-xl">A</span>
           </div>
-          <span className="text-xl font-bold tracking-tight text-white">AI-Local Hub</span>
+          <span className="text-xl font-bold tracking-tight text-white">Auto By Taste</span>
         </div>
         
         <div className="hidden md:flex items-center space-x-8">
           <a href="#overview" className="text-sm font-medium hover:text-blue-400 transition-colors">Tổng quan</a>
           <a href="#problem" className="text-sm font-medium hover:text-blue-400 transition-colors">Giải pháp</a>
+          <a href="#architecture" className="text-sm font-medium hover:text-blue-400 transition-colors">Kiến trúc</a>
           <a href="#products" className="text-sm font-medium hover:text-blue-400 transition-colors">Gói sản phẩm</a>
           <a href="#business" className="text-sm font-medium hover:text-blue-400 transition-colors">Mô hình</a>
           <a href="#funding" className="text-sm font-medium hover:text-blue-400 transition-colors">Gọi vốn</a>
