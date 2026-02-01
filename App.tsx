@@ -6,6 +6,7 @@ import { ProblemSolution } from './components/ProblemSolution';
 import { TargetSegments } from './components/TargetSegments';
 import { ModelHardwareGraph } from './components/ModelHardwareGraph';
 import { AIArchitectureGraph } from './components/AIArchitectureGraph';
+import { OrgChartAgents } from './components/OrgChartAgents';
 import { ProductTiers } from './components/ProductTiers';
 import { BusinessModel } from './components/BusinessModel';
 import { StrategySection } from './components/StrategySection';
@@ -31,6 +32,10 @@ function App() {
 
         <section id="architecture">
           <AIArchitectureGraph />
+        </section>
+
+        <section id="org-chart">
+          <OrgChartAgents />
         </section>
 
         <section id="models">
