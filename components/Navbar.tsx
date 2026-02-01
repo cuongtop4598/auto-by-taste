@@ -27,6 +27,7 @@ export const Navbar: React.FC = () => {
           <a href="#problem" className="text-sm font-medium hover:text-blue-400 transition-colors">Giải pháp</a>
           <a href="#architecture" className="text-sm font-medium hover:text-blue-400 transition-colors">Kiến trúc</a>
           <a href="#products" className="text-sm font-medium hover:text-blue-400 transition-colors">Gói sản phẩm</a>
+          <a href="#trial" className="text-sm font-medium hover:text-green-400 transition-colors">Dùng thử</a>
           <a href="#business" className="text-sm font-medium hover:text-blue-400 transition-colors">Mô hình</a>
           <a href="#funding" className="text-sm font-medium hover:text-blue-400 transition-colors">Gọi vốn</a>
         </div>

@@ -7,6 +7,7 @@ import { TargetSegments } from './components/TargetSegments';
 import { ModelHardwareGraph } from './components/ModelHardwareGraph';
 import { AIArchitectureGraph } from './components/AIArchitectureGraph';
 import { ProductTiers } from './components/ProductTiers';
+import { TrialPlan } from './components/TrialPlan';
 import { BusinessModel } from './components/BusinessModel';
 import { StrategySection } from './components/StrategySection';
 import { FundingSection } from './components/FundingSection';
@@ -39,6 +40,10 @@ function App() {
 
         <section id="products">
           <ProductTiers />
+        </section>
+
+        <section id="trial">
+          <TrialPlan />
         </section>
 
         <section id="business">
