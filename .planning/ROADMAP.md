@@ -34,17 +34,19 @@ Plans:
 
 **Requirements:** [R3, R4]
 
-**Plans:** 2/2 plans complete
+**Plans:** 3 plans (2 complete, 1 gap closure)
 
 Plans:
-- [ ] 02-01-PLAN.md — Create TypeScript data layer (chips, macModels, aiModels, compatibility function)
-- [ ] 02-02-PLAN.md — Build ChipComparison component with Recharts visualization
+- [x] 02-01-PLAN.md — Create TypeScript data layer (chips, macModels, aiModels, compatibility function)
+- [x] 02-02-PLAN.md — Build ChipComparison component with Recharts visualization
+- [ ] 02-03-PLAN.md — Gap closure: Integrate ChipComparison into App.tsx
 
 **Success Criteria:**
 - All Mac models from 2020+ covered
 - All M-series chips with accurate specs
 - 10+ AI models with realistic RAM requirements
 - Chip comparison renders correctly
+- ChipComparison component visible in running application
 
 **Risks:**
 - Spec inaccuracies -> verify against Apple official specs
