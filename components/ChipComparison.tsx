@@ -59,6 +59,35 @@ export const ChipComparison: React.FC = () => {
     maxMemory: '#8B5CF6'
   };
 
+  // Calculate performance uplift percentages (generation view only)
+  const getPerformanceUplift = (chipId: string): string | null => {
+    if (viewMode !== 'generation') return null;
+
+    const uplifts: Record<string, string> = {
+      'm2-pro': '+20% vs M1',
+      'm3-pro': '+30% vs M2',
+      'm4-pro': '+25% vs M3'
+    };
+    return uplifts[chipId] || null;
+  };
+
+  // Get special notes for chips
+  const getChipNote = (chipId: string): { text: string; type: 'warning' | 'success' } | null => {
+    if (chipId === 'm3-pro') {
+      return {
+        text: 'Lưu ý: Băng thông giảm xuống 150 GB/s (M2 Pro: 200 GB/s)',
+        type: 'warning'
+      };
+    }
+    if (chipId === 'm4-max') {
+      return {
+        text: 'Nhanh nhất cho AI workloads - băng thông 546 GB/s',
+        type: 'success'
+      };
+    }
+    return null;
+  };
+
   return (
     <div className="py-24 bg-[#050505]">
       <div className="container mx-auto px-6">
@@ -176,13 +205,35 @@ export const ChipComparison: React.FC = () => {
                   <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-3xl shadow-inner bg-white/5">
                     💻
                   </div>
-                  <div>
+                  <div className="flex-1">
                     <h3 className="text-2xl font-bold text-white">{activeChip.name}</h3>
                     <p className="text-blue-400 font-bold uppercase tracking-widest text-xs">
                       {activeChip.generation} • {activeChip.processNode}
                     </p>
+                    {getPerformanceUplift(activeChip.id) && (
+                      <p className="text-green-400 font-bold text-sm mt-1">
+                        {getPerformanceUplift(activeChip.id)}
+                      </p>
+                    )}
                   </div>
                 </div>
+
+                {/* Special Notes */}
+                {getChipNote(activeChip.id) && (
+                  <div className={`p-4 rounded-xl mb-6 border ${
+                    getChipNote(activeChip.id)?.type === 'warning'
+                      ? 'bg-yellow-500/10 border-yellow-500/30'
+                      : 'bg-green-500/10 border-green-500/30'
+                  }`}>
+                    <p className={`text-sm font-medium ${
+                      getChipNote(activeChip.id)?.type === 'warning'
+                        ? 'text-yellow-400'
+                        : 'text-green-400'
+                    }`}>
+                      {getChipNote(activeChip.id)?.text}
+                    </p>
+                  </div>
+                )}
 
                 <div className="space-y-6">
                   <div>
