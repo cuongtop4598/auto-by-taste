@@ -16,37 +16,13 @@
 
 ---
 
-## Phase 1: Foundation & Particles
 
-**Goal:** Establish visual foundation with particle background and enhanced glassmorphism
 
-**Requirements Covered:**
-- R1: Neural Network Particle Background
-- R2: Enhanced Glassmorphism UI
+**Plans:** 2 plans
 
-**Tasks:**
-1. Install @tsparticles/react, @tsparticles/slim dependencies
-2. Create ParticleBackground component with lazy initialization
-3. Configure neural network style particles (links, colors, counts)
-4. Implement adaptive particle counts (desktop/mobile/low-end)
-5. Add prefers-reduced-motion support
-6. Define z-index CSS variable hierarchy
-7. Extend glass-card styles to all sections
-8. Test particle + glass layering
-
-**Success Criteria:**
-- Particles render behind all content
-- Glass cards show particles through blur
-- Mobile has 30-50 particles max
-- No memory leaks on navigation
-- LCP not impacted (lazy loading works)
-
-**Risks:**
-- Mobile performance degradation → aggressive particle reduction
-- Z-index conflicts → define hierarchy before implementation
-
----
-
+Plans:
+- [ ] 01-01-PLAN.md — Install tsParticles, create particle system components with neural network configuration
+- [ ] 01-02-PLAN.md — Enhance glassmorphism UI, define z-index hierarchy, verify particle + glass layering
 ## Phase 2: Mac Hardware Data
 
 **Goal:** Create structured data for Mac models and AI compatibility
