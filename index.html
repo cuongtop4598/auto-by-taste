@@ -8,12 +8,43 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --z-particles: 0;
+            --z-background: -10;
+            --z-content: 10;
+            --z-glass-cards: 15;
+            --z-navbar: 20;
+            --z-modal: 50;
+            --z-fab: 100;
+        }
+
         body { font-family: 'Inter', sans-serif; }
+
         .glass-card {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Safari fallback */
             border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: var(--z-glass-cards);
         }
+
+        /* Fallback for browsers without backdrop-filter support */
+        @supports not (backdrop-filter: blur(10px)) {
+            .glass-card {
+                background: rgba(255, 255, 255, 0.08);
+            }
+        }
+
+        .glass-card-strong {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+            z-index: var(--z-glass-cards);
+        }
+
         .text-gradient {
             background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
             -webkit-background-clip: text;
