@@ -10,12 +10,16 @@ import { OrgChartAgents } from './components/OrgChartAgents';
 import { ProductTiers } from './components/ProductTiers';
 import { BusinessModel } from './components/BusinessModel';
 import { StrategySection } from './components/StrategySection';
-import { FundingSection } from './components/FundingSection';
+import { ServicePricing } from './components/ServicePricing';
 import { Footer } from './components/Footer';
+import ParticleBackground from './components/particles/ParticleBackground';
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col relative">
+      {/* Particle background layer - z-index 0 */}
+      <ParticleBackground />
+
       <Navbar />
       <main className="flex-grow pt-20">
         <section id="overview">
@@ -54,8 +58,8 @@ function App() {
           <StrategySection />
         </section>
 
-        <section id="funding">
-          <FundingSection />
+        <section id="pricing">
+          <ServicePricing />
         </section>
       </main>
       <Footer />
@@ -68,7 +72,7 @@ function App() {
           rel="noopener noreferrer"
           className="group flex items-center space-x-3 bg-blue-600 text-white pl-4 pr-2 py-2 rounded-full shadow-2xl shadow-blue-600/40 hover:bg-blue-500 transition-all hover:scale-105"
         >
-          <span className="text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Chat Zalo Founder</span>
+          <span className="text-xs font-bold opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Tư vấn thuê AI Agent</span>
           <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
             <img src="https://img.icons8.com/color/48/zalo.png" alt="Zalo" className="w-6 h-6" />
           </div>
