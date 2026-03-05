@@ -21,8 +21,8 @@ const aiTools = [
 ];
 
 const hardware = [
-  { name: 'Mac Studio', icon: 'https://img.icons8.com/sf-regular-filled/48/FFFFFF/mac-studio.png' },
-  { name: 'Mac Mini', icon: 'https://img.icons8.com/sf-regular-filled/48/FFFFFF/mac-mini.png' },
+  { name: 'Mac Studio', icon: 'https://umxxfeuo5ed9xpid.public.blob.vercel-storage.com/media/static_front_fmvxob6uyxiu_large_2x_1772707656945.jpg' },
+  { name: 'Mac Mini', icon: 'https://umxxfeuo5ed9xpid.public.blob.vercel-storage.com/media/design_thermal_static_qwpwput2piyy_large_1772707661360.jpg' },
 ];
 
 export const AIArchitectureGraph: React.FC = () => {
