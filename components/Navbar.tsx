@@ -17,11 +17,11 @@ export const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-            <span className="text-white font-bold text-xl">A</span>
+            <img src="/logo.jpg" alt="Auto By Taste" className="w-8 h-8 object-cover rounded-2xl" />
           </div>
           <span className="text-xl font-bold tracking-tight text-white">Auto By Taste</span>
         </div>
-        
+
         <div className="hidden md:flex items-center space-x-8">
           <a href="#overview" className="text-sm font-medium hover:text-blue-400 transition-colors">Tổng quan</a>
           <a href="#problem" className="text-sm font-medium hover:text-blue-400 transition-colors">Giải pháp</a>
