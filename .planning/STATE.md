@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-current_plan: Not started
-status: planning
-last_updated: "2026-03-05T10:26:14.813Z"
+current_plan: 02-01-PLAN.md (Complete)
+status: executing
+last_updated: "2026-03-05T10:33:34.140Z"
 progress:
   total_phases: 6
-  completed_phases: 1
+  completed_phases: 2
   total_plans: 4
-  completed_plans: 3
+  completed_plans: 4
 ---
 
 # Project State
@@ -21,15 +21,15 @@ progress:
 
 **Milestone:** v1.0
 **Phase:** 02-mac-hardware-data
-**Current Plan:** 02-01-PLAN.md (Complete)
-**Status:** In progress
+**Current Plan:** 02-02-PLAN.md (Complete)
+**Status:** Complete
 
 ## Progress
 
 | Phase | Status | Plans | Notes |
 |-------|--------|-------|-------|
 | 1: Foundation & Particles | Complete | 2/2 | Particle background + glassmorphism complete |
-| 2: Mac Hardware Data | In Progress | 1/2 | Data layer complete, chip comparison pending |
+| 2: Mac Hardware Data | Complete | 2/2 | Data layer + chip comparison complete |
 | 3: Interactive Mac Selector | Pending | 0/2 | |
 | 4: Apple Silicon Education | Pending | 0/1 | |
 | 5: Performance Visualization | Pending | 0/1 | |
@@ -48,8 +48,9 @@ progress:
 - **Executed:** Phase 01 Plan 02 - Glassmorphism UI enhancement (5 tasks, 4 commits, 180m)
 - **Status:** Phase 01 Complete
 - **Executed:** Phase 02 Plan 01 - Mac hardware data layer (3 tasks, 6 commits, 4m 17s)
-- **Status:** Phase 02 in progress (1/2 plans complete)
-- **Next:** Phase 02 Plan 02 - Chip comparison component
+- **Executed:** Phase 02 Plan 02 - Chip comparison component (3 tasks, 3 commits, 4m 11s)
+- **Status:** Phase 02 Complete
+- **Next:** Phase 03 Plan 01 - Interactive Mac selector
 
 ## Key Decisions
 
@@ -72,6 +73,9 @@ progress:
 | Q4_K_M quantization baseline | 75% size reduction with minimal quality loss; standard for local AI deployment | 2026-03-05 |
 | Document M3 Pro bandwidth regression | M3 Pro has 150 GB/s vs M2 Pro 200 GB/s - known Apple design change | 2026-03-05 |
 | 16GB base for M4 Macs | Mac Mini M4 and newer start at 16GB as of Oct 2024 Apple update | 2026-03-05 |
+| Combine Tasks 1 and 2 for efficient implementation | Chip selection and details panel are integral to component design | 2026-03-05 |
+| Use Pro variants for generation comparison clarity | Pro models represent best balance across generations | 2026-03-05 |
+| Add performance uplift percentages for user education | Helps users understand generational improvements at a glance | 2026-03-05 |
 
 ## Blockers
 
@@ -84,6 +88,7 @@ None currently.
 | 01 | 01 | 4m 48s | 5 | 8 | 6 | 2026-03-05 |
 | 01 | 02 | 3h 0m | 5 | 4 | 4 | 2026-03-05 |
 | 02 | 01 | 4m 17s | 3 | 9 | 6 | 2026-03-05 |
+| 02 | 02 | 4m 11s | 3 | 4 | 3 | 2026-03-05 |
 
 ## Dependencies to Install
 

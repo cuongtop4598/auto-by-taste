@@ -8,7 +8,7 @@
 | Phase | Goal | Requirements | Est. Complexity |
 |-------|------|--------------|-----------------|
 | 1 | Foundation & Particles | R1, R2 | MEDIUM |
-| 2 | Mac Hardware Data | R3 (data), R4 | MEDIUM |
+| 2 | 2/2 | Complete   | 2026-03-05 |
 | 3 | Interactive Mac Selector | R3 (UI) | MEDIUM-HIGH |
 | 4 | Apple Silicon Education | R5 | MEDIUM |
 | 5 | Performance Visualization | R6 | MEDIUM |
@@ -34,7 +34,7 @@ Plans:
 
 **Requirements:** [R3, R4]
 
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [ ] 02-01-PLAN.md — Create TypeScript data layer (chips, macModels, aiModels, compatibility function)

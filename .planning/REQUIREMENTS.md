@@ -91,11 +91,11 @@ Allow users to select their Mac model and see which AI models are compatible.
 Display comparative information about M-series chip capabilities.
 
 **Acceptance Criteria:**
-- [ ] Visual comparison of M1 vs M2 vs M3 vs M4 generations
-- [ ] Key metrics: CPU cores, GPU cores, Neural Engine, max RAM
-- [ ] Memory bandwidth comparison (critical for AI performance)
-- [ ] Clear visual hierarchy showing progression
-- [ ] Performance uplift percentages where relevant
+- [x] Visual comparison of M1 vs M2 vs M3 vs M4 generations
+- [x] Key metrics: CPU cores, GPU cores, Neural Engine, max RAM
+- [x] Memory bandwidth comparison (critical for AI performance)
+- [x] Clear visual hierarchy showing progression
+- [x] Performance uplift percentages where relevant
 - [ ] Integrates with Mac selector (highlight selected chip)
 
 **Technical Approach:**
