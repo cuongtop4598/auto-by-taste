@@ -12,9 +12,9 @@ Requirements for English/Vietnamese internationalization. Each maps to roadmap p
 - [x] **I18N-01**: English translation files exist with all content from 9 components
 - [x] **I18N-02**: Vietnamese translation files exist with all existing content preserved
 - [x] **I18N-03**: Translation files use type-safe TypeScript structure preventing key mismatches
-- [ ] **I18N-04**: I18n Context provides language state management via React Context API
-- [ ] **I18N-05**: Language preference persists in localStorage across browser sessions
-- [ ] **I18N-06**: HTML lang attribute syncs with current language for SEO/accessibility
+- [x] **I18N-04**: I18n Context provides language state management via React Context API
+- [x] **I18N-05**: Language preference persists in localStorage across browser sessions
+- [x] **I18N-06**: HTML lang attribute syncs with current language for SEO/accessibility
 
 ### User-Facing Features
 
@@ -68,9 +68,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | I18N-01 | Phase 1 | Complete |
 | I18N-02 | Phase 1 | Complete |
 | I18N-03 | Phase 1 | Complete |
-| I18N-04 | Phase 1 | Pending |
-| I18N-05 | Phase 1 | Pending |
-| I18N-06 | Phase 1 | Pending |
+| I18N-04 | Phase 1 | Complete |
+| I18N-05 | Phase 1 | Complete |
+| I18N-06 | Phase 1 | Complete |
 | UX-01 | Phase 2 | Pending |
 | UX-02 | Phase 2 | Pending |
 | UX-03 | Phase 2 | Pending |
