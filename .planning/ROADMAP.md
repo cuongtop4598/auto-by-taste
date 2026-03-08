@@ -51,7 +51,7 @@ Plans:
 **Milestone Goal:** Redesign the Hero section with an animated Apple Silicon chip diagram showing M4 family specs to communicate raw computational power as AI agent infrastructure.
 
 - [x] **Phase 3: Animation Infrastructure** - Data layer extension, animation hooks, CSS keyframes, and accessibility foundation (completed 2026-03-08)
-- [ ] **Phase 4: SVG Chip Diagram** - Animated chip block diagram component with variant selection and responsive layout
+- [x] **Phase 4: SVG Chip Diagram** - Animated chip block diagram component with variant selection and responsive layout (completed 2026-03-08)
 - [ ] **Phase 5: Hero Integration** - Hero section redesign with chip diagram, new headline/subtext/CTAs, and visual polish
 
 ## Phase Details
@@ -110,5 +110,5 @@ Phases execute in numeric order: 3 -> 4 -> 5
 | 1. i18n Foundation | v1.0 | 2/2 | Abandoned | 2026-03-07 |
 | 2. Mac Hardware Data | v1.0 | 3/3 | Abandoned | 2026-03-07 |
 | 3. Animation Infrastructure | 2/2 | Complete   | 2026-03-08 | - |
-| 4. SVG Chip Diagram | v2.0 | 0/2 | Not started | - |
+| 4. SVG Chip Diagram | 2/2 | Complete   | 2026-03-08 | - |
 | 5. Hero Integration | v2.0 | 0/0 | Not started | - |
