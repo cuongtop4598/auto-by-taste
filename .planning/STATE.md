@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Hero Apple Silicon Showcase
-status: planning
-stopped_at: Roadmap created -- ready to plan Phase 3
+status: phase_complete
+stopped_at: Completed 03-01-PLAN.md (animation data and hooks)
 last_updated: "2026-03-08T02:39:11.385Z"
 last_activity: 2026-03-08 — Roadmap created for v2.0 (Phases 3-5)
 progress:
   total_phases: 5
   completed_phases: 3
   total_plans: 9
-  completed_plans: 8
-  percent: 0
+  completed_plans: 9
+  percent: 100
 ---
 
 # Project State
@@ -26,24 +26,24 @@ See: .planning/PROJECT.md (updated 2026-03-07)
 ## Current Position
 
 Phase: 3 of 5 (Animation Infrastructure)
-Plan: 2 of 3 complete
-Status: Executing
-Last activity: 2026-03-08 — Completed 03-02 CSS keyframes and reduced-motion
+Plan: 3 of 3 complete
+Status: Phase 3 complete
+Last activity: 2026-03-08 — Completed 03-01 animation data and hooks
 
-Progress: [█████████░] 89%
+Progress: [██████████] 100%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 1 min
-- Total execution time: 0.02 hours
+- Total plans completed: 2
+- Average duration: 2 min
+- Total execution time: 0.07 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 03-animation-infrastructure | 1 | 1 min | 1 min |
+| 03-animation-infrastructure | 2 | 4 min | 2 min |
 
 ## Accumulated Context
 
@@ -60,6 +60,8 @@ Recent decisions affecting current work:
 - prefers-reduced-motion built in from Phase 3, not retrofitted
 - Used 0.01ms duration (not 0) in reduced-motion to avoid breaking CSS animation events
 - Compositor-only properties enforced: opacity, transform, stroke-dashoffset
+- tops field kept optional on Chip interface -- only M4 has marketed TOPS values
+- useCountUp accepts trigger param for composability with useInView
 
 ### Pending Todos
 
@@ -72,5 +74,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-08
-Stopped at: Completed 03-02-PLAN.md (CSS keyframes and reduced-motion)
+Stopped at: Completed 03-01-PLAN.md (animation data and hooks)
 Resume file: None
