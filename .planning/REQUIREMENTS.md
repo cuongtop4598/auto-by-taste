@@ -67,26 +67,26 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CHIP-01 | - | Pending |
-| CHIP-02 | - | Pending |
-| CHIP-03 | - | Pending |
-| CHIP-04 | - | Pending |
-| CHIP-05 | - | Pending |
-| HERO-01 | - | Pending |
-| HERO-02 | - | Pending |
-| HERO-03 | - | Pending |
-| HERO-04 | - | Pending |
-| HERO-05 | - | Pending |
-| A11Y-01 | - | Pending |
-| A11Y-02 | - | Pending |
-| A11Y-03 | - | Pending |
-| A11Y-04 | - | Pending |
+| CHIP-01 | Phase 4 | Pending |
+| CHIP-02 | Phase 4 | Pending |
+| CHIP-03 | Phase 4 | Pending |
+| CHIP-04 | Phase 4 | Pending |
+| CHIP-05 | Phase 3 | Pending |
+| HERO-01 | Phase 5 | Pending |
+| HERO-02 | Phase 5 | Pending |
+| HERO-03 | Phase 5 | Pending |
+| HERO-04 | Phase 5 | Pending |
+| HERO-05 | Phase 5 | Pending |
+| A11Y-01 | Phase 3 | Pending |
+| A11Y-02 | Phase 3 | Pending |
+| A11Y-03 | Phase 4 | Pending |
+| A11Y-04 | Phase 3 | Pending |
 
 **Coverage:**
 - v2.0 requirements: 14 total
-- Mapped to phases: 0
-- Unmapped: 14
+- Mapped to phases: 14
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-08*
-*Last updated: 2026-03-08 after initial definition*
+*Last updated: 2026-03-08 after roadmap creation*

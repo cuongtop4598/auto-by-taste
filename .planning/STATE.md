@@ -2,11 +2,11 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Hero Apple Silicon Showcase
-status: defining_requirements
-last_updated: "2026-03-07T16:30:00.000Z"
-last_activity: 2026-03-07 — Milestone v2.0 started
+status: ready_to_plan
+last_updated: "2026-03-08"
+last_activity: 2026-03-08 — Roadmap created for v2.0 (Phases 3-5)
 progress:
-  total_phases: 0
+  total_phases: 3
   completed_phases: 0
   total_plans: 0
   completed_plans: 0
@@ -20,14 +20,14 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Visitors immediately grasp Apple Silicon's raw power as AI infrastructure
-**Current focus:** Defining requirements for Hero Apple Silicon Showcase
+**Current focus:** Phase 3 - Animation Infrastructure
 
 ## Current Position
 
-Phase: Not started (defining requirements)
+Phase: 3 of 5 (Animation Infrastructure)
 Plan: -
-Status: Defining requirements
-Last activity: 2026-03-07 — Milestone v2.0 started
+Status: Ready to plan
+Last activity: 2026-03-08 — Roadmap created for v2.0 (Phases 3-5)
 
 Progress: [░░░░░░░░░░] 0%
 
@@ -51,11 +51,12 @@ Progress: [░░░░░░░░░░] 0%
 Decisions are logged in PROJECT.md Key Decisions table.
 Recent decisions affecting current work:
 
-- Abandon v1.0 i18n — pivot to Hero redesign
+- Abandon v1.0 i18n -- pivot to Hero redesign
 - SVG chip diagram (not 3D) for bundle size
 - M4 family (M4/Pro/Max) maps to product tiers
-- Animated diagram with glowing cores, flowing data, counting numbers
-- Full Hero section redesign (layout, headline, CTAs)
+- Zero new dependencies -- CSS keyframes + custom hooks only
+- Compositor-only animation properties (opacity, transform) for performance
+- prefers-reduced-motion built in from Phase 3, not retrofitted
 
 ### Pending Todos
 
@@ -67,6 +68,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-07T16:30:00.000Z
-Stopped at: Milestone v2.0 started — defining requirements
+Last session: 2026-03-08
+Stopped at: Roadmap created -- ready to plan Phase 3
 Resume file: None
