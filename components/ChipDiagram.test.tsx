@@ -1,50 +1,32 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, act } from '@testing-library/react';
 import { ChipDiagram } from './ChipDiagram';
 
 // --- Mocks ---
 
-let observerCallback: IntersectionObserverCallback;
-let mockObserverInstance: {
-  observe: ReturnType<typeof vi.fn>;
-  unobserve: ReturnType<typeof vi.fn>;
-  disconnect: ReturnType<typeof vi.fn>;
-};
+// Mock useCountUp to return target value immediately (hook is tested separately)
+vi.mock('./hooks/useCountUp', () => ({
+  useCountUp: (target: number) => target,
+}));
+
+// Mock useInView to be controllable
+let inViewValue = false;
+vi.mock('./hooks/useInView', () => ({
+  useInView: () => inViewValue,
+}));
+
+// Mock useReducedMotion
+vi.mock('./hooks/useReducedMotion', () => ({
+  useReducedMotion: () => false,
+}));
 
 beforeEach(() => {
-  mockObserverInstance = {
-    observe: vi.fn(),
-    unobserve: vi.fn(),
-    disconnect: vi.fn(),
-  };
-
-  vi.stubGlobal(
-    'IntersectionObserver',
-    vi.fn(function (this: unknown, callback: IntersectionObserverCallback) {
-      observerCallback = callback;
-      return mockObserverInstance;
-    })
-  );
-
-  // requestAnimationFrame: execute callback immediately with a high timestamp
-  // so useCountUp completes instantly
-  vi.stubGlobal('requestAnimationFrame', vi.fn((cb: FrameRequestCallback) => {
-    cb(2000);
-    return 1;
-  }));
-  vi.stubGlobal('cancelAnimationFrame', vi.fn());
+  inViewValue = false;
 });
 
 afterEach(() => {
   vi.restoreAllMocks();
 });
-
-function triggerIntersection(isIntersecting: boolean) {
-  observerCallback(
-    [{ isIntersecting } as IntersectionObserverEntry],
-    {} as IntersectionObserver
-  );
-}
 
 describe('ChipDiagram', () => {
   it('renders four distinct chip blocks with labels', () => {
@@ -62,28 +44,27 @@ describe('ChipDiagram', () => {
   it('renders spec values from chip data (M4 base defaults)', () => {
     const { container } = render(<ChipDiagram />);
 
-    // Trigger viewport entry so useCountUp completes
-    triggerIntersection(true);
-
     const svgText = container.querySelector('svg')!.textContent || '';
     // M4 base: 10 CPU, 10 GPU, 38 TOPS, 120 GB/s, 32GB
     expect(svgText).toContain('10');  // CPU or GPU cores
     expect(svgText).toContain('32');  // maxMemory GB
+    expect(svgText).toContain('38');  // TOPS
+    expect(svgText).toContain('120'); // bandwidth
   });
 
   it('updates specs when variant tab is clicked', () => {
     const { container, getByRole } = render(<ChipDiagram />);
-
-    // Trigger viewport so counts complete
-    triggerIntersection(true);
 
     // Click M4 Max tab
     const maxTab = getByRole('tab', { name: /M4 Max/i });
     fireEvent.click(maxTab);
 
     const svgText = container.querySelector('svg')!.textContent || '';
-    // M4 Max: 40 GPU cores
-    expect(svgText).toContain('40');
+    // M4 Max: 16 CPU (12P+4E), 40 GPU, 546 GB/s, 128GB
+    expect(svgText).toContain('40');   // GPU cores
+    expect(svgText).toContain('128');  // maxMemory
+    expect(svgText).toContain('546');  // bandwidth
+    expect(svgText).toContain('12P');  // performance cores
   });
 
   it('tab buttons have correct ARIA attributes', () => {
@@ -113,21 +94,17 @@ describe('ChipDiagram', () => {
   });
 
   it('SVG has accessible role and label', () => {
-    const { container } = render(<ChipDiagram />);
+    const { container, getByRole } = render(<ChipDiagram />);
     const svg = container.querySelector('svg');
 
     expect(svg!.getAttribute('role')).toBe('img');
     expect(svg!.getAttribute('aria-label')).toContain('M4');
 
     // Label updates when variant changes
-    const { getByRole } = render(<ChipDiagram />);
     const maxTab = getByRole('tab', { name: /M4 Max/i });
     fireEvent.click(maxTab);
 
-    const svg2 = maxTab.closest('div')?.querySelector('svg');
-    if (svg2) {
-      expect(svg2.getAttribute('aria-label')).toContain('M4 Max');
-    }
+    expect(svg!.getAttribute('aria-label')).toContain('M4 Max');
   });
 
   it('total DOM elements under 100', () => {
