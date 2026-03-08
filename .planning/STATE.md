@@ -2,14 +2,15 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Hero Apple Silicon Showcase
-status: ready_to_plan
-last_updated: "2026-03-08"
+status: planning
+stopped_at: Roadmap created -- ready to plan Phase 3
+last_updated: "2026-03-08T02:39:11.385Z"
 last_activity: 2026-03-08 — Roadmap created for v2.0 (Phases 3-5)
 progress:
-  total_phases: 3
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  total_phases: 5
+  completed_phases: 3
+  total_plans: 9
+  completed_plans: 8
   percent: 0
 ---
 
@@ -25,24 +26,24 @@ See: .planning/PROJECT.md (updated 2026-03-07)
 ## Current Position
 
 Phase: 3 of 5 (Animation Infrastructure)
-Plan: -
-Status: Ready to plan
-Last activity: 2026-03-08 — Roadmap created for v2.0 (Phases 3-5)
+Plan: 2 of 3 complete
+Status: Executing
+Last activity: 2026-03-08 — Completed 03-02 CSS keyframes and reduced-motion
 
-Progress: [░░░░░░░░░░] 0%
+Progress: [█████████░] 89%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 0
-- Average duration: - min
-- Total execution time: 0 hours
+- Total plans completed: 1
+- Average duration: 1 min
+- Total execution time: 0.02 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| - | - | - | - |
+| 03-animation-infrastructure | 1 | 1 min | 1 min |
 
 ## Accumulated Context
 
@@ -57,6 +58,8 @@ Recent decisions affecting current work:
 - Zero new dependencies -- CSS keyframes + custom hooks only
 - Compositor-only animation properties (opacity, transform) for performance
 - prefers-reduced-motion built in from Phase 3, not retrofitted
+- Used 0.01ms duration (not 0) in reduced-motion to avoid breaking CSS animation events
+- Compositor-only properties enforced: opacity, transform, stroke-dashoffset
 
 ### Pending Todos
 
@@ -69,5 +72,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-08
-Stopped at: Roadmap created -- ready to plan Phase 3
+Stopped at: Completed 03-02-PLAN.md (CSS keyframes and reduced-motion)
 Resume file: None

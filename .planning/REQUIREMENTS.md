@@ -26,7 +26,7 @@ Requirements for Hero Apple Silicon chip diagram showcase. Each maps to roadmap 
 ### Accessibility & Performance
 
 - [ ] **A11Y-01**: Animations respect prefers-reduced-motion (static fallback when enabled)
-- [ ] **A11Y-02**: All animations use compositor-only properties (opacity, transform) for GPU acceleration
+- [x] **A11Y-02**: All animations use compositor-only properties (opacity, transform) for GPU acceleration
 - [ ] **A11Y-03**: SVG diagram DOM stays under 100 elements for mobile performance
 - [ ] **A11Y-04**: Animations trigger via IntersectionObserver (no off-screen animation waste)
 
@@ -78,7 +78,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HERO-04 | Phase 5 | Pending |
 | HERO-05 | Phase 5 | Pending |
 | A11Y-01 | Phase 3 | Pending |
-| A11Y-02 | Phase 3 | Pending |
+| A11Y-02 | Phase 3 | Complete |
 | A11Y-03 | Phase 4 | Pending |
 | A11Y-04 | Phase 3 | Pending |
 
