@@ -2,16 +2,16 @@
 gsd_state_version: 1.0
 milestone: v2.0
 milestone_name: Hero Apple Silicon Showcase
-status: completed
-stopped_at: Completed 03-01-PLAN.md (animation data and hooks)
-last_updated: "2026-03-08T02:45:03.926Z"
-last_activity: 2026-03-08 — Completed 03-01 animation data and hooks
+status: executing
+stopped_at: Completed 04-01-PLAN.md (SVG chip diagram component)
+last_updated: "2026-03-08T03:12:38.975Z"
+last_activity: 2026-03-08 — Completed 04-01 SVG chip diagram component
 progress:
   total_phases: 5
   completed_phases: 4
-  total_plans: 9
-  completed_plans: 9
-  percent: 100
+  total_plans: 11
+  completed_plans: 10
+  percent: 91
 ---
 
 # Project State
@@ -21,16 +21,16 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-07)
 
 **Core value:** Visitors immediately grasp Apple Silicon's raw power as AI infrastructure
-**Current focus:** Phase 3 - Animation Infrastructure
+**Current focus:** Phase 4 - SVG Chip Diagram
 
 ## Current Position
 
-Phase: 3 of 5 (Animation Infrastructure)
-Plan: 3 of 3 complete
-Status: Phase 3 complete
-Last activity: 2026-03-08 — Completed 03-01 animation data and hooks
+Phase: 4 of 5 (SVG Chip Diagram)
+Plan: 1 of 2 complete
+Status: In progress
+Last activity: 2026-03-08 — Completed 04-01 SVG chip diagram component
 
-Progress: [██████████] 100%
+Progress: [█████████░] 91%
 
 ## Performance Metrics
 
@@ -44,6 +44,7 @@ Progress: [██████████] 100%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 03-animation-infrastructure | 2 | 4 min | 2 min |
+| Phase 04 P01 | 2 | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -62,6 +63,10 @@ Recent decisions affecting current work:
 - Compositor-only properties enforced: opacity, transform, stroke-dashoffset
 - tops field kept optional on Chip interface -- only M4 has marketed TOPS values
 - useCountUp accepts trigger param for composability with useInView
+- Block regions with text labels (not per-core rects) to stay under 100 SVG DOM elements
+- No re-animation on variant switch -- instant values after initial viewport animation
+- Mock hooks at module level in component tests rather than browser APIs
+- [Phase 04]: Block regions with text labels to stay under 100 SVG DOM elements
 
 ### Pending Todos
 
@@ -73,6 +78,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-08
-Stopped at: Completed 03-01-PLAN.md (animation data and hooks)
+Last session: 2026-03-08T03:12:38.974Z
+Stopped at: Completed 04-01-PLAN.md (SVG chip diagram component)
 Resume file: None

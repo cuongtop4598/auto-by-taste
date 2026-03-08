@@ -9,10 +9,10 @@ Requirements for Hero Apple Silicon chip diagram showcase. Each maps to roadmap 
 
 ### Chip Diagram
 
-- [ ] **CHIP-01**: SVG chip block diagram displays CPU cores, GPU cores, Neural Engine, and unified memory as distinct visual blocks
-- [ ] **CHIP-02**: User can select M4 variant (M4 / M4 Pro / M4 Max) and diagram updates to show that chip's specs
-- [ ] **CHIP-03**: Spec numbers animate with count-up effect when diagram enters viewport
-- [ ] **CHIP-04**: Chip diagram is responsive and readable on mobile (320px+), tablet, and desktop
+- [x] **CHIP-01**: SVG chip block diagram displays CPU cores, GPU cores, Neural Engine, and unified memory as distinct visual blocks
+- [x] **CHIP-02**: User can select M4 variant (M4 / M4 Pro / M4 Max) and diagram updates to show that chip's specs
+- [x] **CHIP-03**: Spec numbers animate with count-up effect when diagram enters viewport
+- [x] **CHIP-04**: Chip diagram is responsive and readable on mobile (320px+), tablet, and desktop
 - [x] **CHIP-05**: TOPS field added to chip data layer for Neural Engine performance display
 
 ### Hero Layout
@@ -27,7 +27,7 @@ Requirements for Hero Apple Silicon chip diagram showcase. Each maps to roadmap 
 
 - [x] **A11Y-01**: Animations respect prefers-reduced-motion (static fallback when enabled)
 - [x] **A11Y-02**: All animations use compositor-only properties (opacity, transform) for GPU acceleration
-- [ ] **A11Y-03**: SVG diagram DOM stays under 100 elements for mobile performance
+- [x] **A11Y-03**: SVG diagram DOM stays under 100 elements for mobile performance
 - [x] **A11Y-04**: Animations trigger via IntersectionObserver (no off-screen animation waste)
 
 ## v2.1 Requirements
@@ -67,10 +67,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| CHIP-01 | Phase 4 | Pending |
-| CHIP-02 | Phase 4 | Pending |
-| CHIP-03 | Phase 4 | Pending |
-| CHIP-04 | Phase 4 | Pending |
+| CHIP-01 | Phase 4 | Complete |
+| CHIP-02 | Phase 4 | Complete |
+| CHIP-03 | Phase 4 | Complete |
+| CHIP-04 | Phase 4 | Complete |
 | CHIP-05 | Phase 3 | Complete |
 | HERO-01 | Phase 5 | Pending |
 | HERO-02 | Phase 5 | Pending |
@@ -79,7 +79,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | HERO-05 | Phase 5 | Pending |
 | A11Y-01 | Phase 3 | Complete |
 | A11Y-02 | Phase 3 | Complete |
-| A11Y-03 | Phase 4 | Pending |
+| A11Y-03 | Phase 4 | Complete |
 | A11Y-04 | Phase 3 | Complete |
 
 **Coverage:**
