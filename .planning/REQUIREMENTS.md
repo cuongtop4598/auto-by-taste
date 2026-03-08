@@ -17,8 +17,8 @@ Requirements for Hero Apple Silicon chip diagram showcase. Each maps to roadmap 
 
 ### Hero Layout
 
-- [ ] **HERO-01**: Hero section displays new headline communicating Apple Silicon raw power for AI
-- [ ] **HERO-02**: Hero subtext explains unified memory architecture advantage for local AI agents
+- [x] **HERO-01**: Hero section displays new headline communicating Apple Silicon raw power for AI
+- [x] **HERO-02**: Hero subtext explains unified memory architecture advantage for local AI agents
 - [ ] **HERO-03**: CTA buttons updated to match new visual direction
 - [ ] **HERO-04**: Spec callout badges show key numbers (TOPS, memory bandwidth) prominently
 - [ ] **HERO-05**: Chip diagram integrated into Hero section with proper visual hierarchy
@@ -72,8 +72,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CHIP-03 | Phase 4 | Complete |
 | CHIP-04 | Phase 4 | Complete |
 | CHIP-05 | Phase 3 | Complete |
-| HERO-01 | Phase 5 | Pending |
-| HERO-02 | Phase 5 | Pending |
+| HERO-01 | Phase 5 | Complete |
+| HERO-02 | Phase 5 | Complete |
 | HERO-03 | Phase 5 | Pending |
 | HERO-04 | Phase 5 | Pending |
 | HERO-05 | Phase 5 | Pending |
