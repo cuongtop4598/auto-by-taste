@@ -14,6 +14,7 @@ import { BusinessModel } from './components/BusinessModel';
 import { StrategySection } from './components/StrategySection';
 import { ServicePricing } from './components/ServicePricing';
 import { Footer } from './components/Footer';
+import { ChipDiagram } from './components/ChipDiagram';
 import ParticleBackground from './components/particles/ParticleBackground';
 
 const AppContent: React.FC = () => {
@@ -43,6 +44,10 @@ const AppContent: React.FC = () => {
 
         <section id="org-chart">
           <OrgChartAgents />
+        </section>
+
+        <section id="chip-diagram-preview">
+          <ChipDiagram />
         </section>
 
         <section id="chip-comparison">
